@@ -9,4 +9,4 @@ def custom_port():
 port = 8080
 
 if __name__ == '__main__':
-    app.run(port=port)
+    app.run(port=8080)

@@ -7,4 +7,4 @@ def show_user_profile(username):
     return f'User {username}'
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
