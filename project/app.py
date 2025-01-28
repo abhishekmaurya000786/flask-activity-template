@@ -13,6 +13,6 @@ def home():
 def add_task():
     task = request.form['task']
     tasks.append(task)
-        return redirect(url_for('home'))
+    return redirect(url_for('home'))
 if __name__ == '__main__':
-app.run(debug=True)
+    app.run(debug=True)
