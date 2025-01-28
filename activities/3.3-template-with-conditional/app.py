@@ -7,4 +7,4 @@ def status(status):
     return render_template('status.html', status=status)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

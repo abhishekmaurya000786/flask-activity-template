@@ -8,4 +8,4 @@ def tasks():
     return render_template('tasks.html', tasks=task_list)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
