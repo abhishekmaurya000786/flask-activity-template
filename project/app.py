@@ -14,5 +14,10 @@ def add_task():
     task = request.form['task']
     tasks.append(task)
     return redirect(url_for('home'))
+@app.route('/delete/<int:task_index>')
+def delete(task_index):
+    if 0<= task_index < len(tasks):
+        tasks.pop(task_index)
+    return redirect(url_for('home'))
 if __name__ == '__main__':
     app.run(debug=True)
